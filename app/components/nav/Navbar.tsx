@@ -2,30 +2,24 @@ import Link from 'next/link'
 import DarkModeToggle from '../DarkModeToggle'
 import MobileNavDropdown from './MobileNavDropdown'
 
-const Logo = ({ className }: { className?: string }) => {
-  return (
-    <img alt="logo" src="/p2logo.png" className={`w-20 ${className}`} />
-  )
-}
-
 export const navLinks = [
   {
-    label: 'about',
+    label: 'Home',
+    href: '/',
+    mobile: true
+  },
+  {
+    label: 'About',
     href: '/about',
     mobile: true
   },
   {
-    label: 'portfolio',
+    label: 'Portfolio',
     href: '/portfolio',
     mobile: true
   },
   {
-    label: <Logo />,
-    href: '/',
-    mobile: false
-  },
-  {
-    label: 'blog',
+    label: 'Blog',
     href: '/blog',
     mobile: true
   }
@@ -46,7 +40,13 @@ const Navbar = () => {
         </ul>
         {/* mobile */}
         <MobileNavDropdown />
-        <Link href="/"><Logo className="md:hidden" /></Link>
+        <div className="md:hidden flex">
+          {navLinks.map((link, index) => (
+            <Link key={index} href={link.href}>
+              <span className="px-2">{link.label}</span>
+            </Link>
+          ))}
+        </div>
         <div className="md:hidden">
           <DarkModeToggle />
         </div>

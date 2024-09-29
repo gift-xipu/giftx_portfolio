@@ -3,17 +3,17 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
 
 const ProfilePicture = () => {
   return (
-    <img src="/self.png" alt="Profile picture of Payton" className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3" />
+    <img src="/Me.jpg" alt="Profile picture of Gift" className="bg-gradient-to-br  rounded-full w-[350px] md:w-2/5 p-3" />
   )
 }
 
 const BulletPoints = () => {
   return (
     <ul className="space-y-1 text-xl text-center md:text-left">
-      <li>🧀 based in wisconsin</li>
-      <li>🐔 cat & chicken mom</li>
-      <li><a href="mailto:paytontaylor96@gmail.com">📧 let's get in touch!</a></li>
-      <li>📝download my <a className="link link-primary" href="/PaytonPierceResume.pdf" download="PaytonPierceResume">resume</a></li>
+      <li>💻 I love coding</li>
+      <li>🎓 IT graduate</li>
+      <li>📊 Passionate about data science</li>
+      <li>📝 Download my <a className="link link-primary" href="/GIFT_MARKUS_XIPU_CV.pdf" download="GiftResume">resume</a></li>
     </ul>
   )
 }
@@ -27,15 +27,15 @@ const WavingHand = () => {
 const socials = [
   {
     icon: <FaGithub />,
-    href: "https://github.com/paytonjewell/"
+    href: "https://github.com/giftdev/"
   },
   {
     icon: <FaLinkedin />,
-    href: "https://linkedin.com/in/payton-pierce/"
+    href: "https://linkedin.com/in/giftdev/"
   },
   {
     icon: <FaXTwitter />,
-    href: "https://x.com/paytonpiercedev"
+    href: "https://x.com/giftdev"
   }
 ]
 
@@ -48,9 +48,9 @@ export default function Home() {
       <div>
         <div className="text-center md:text-left mb-4">
           <h1 className="text-5xl">
-            Hi, I'm <span className="bg-gradient-to-tl from-indigo-500 to-fuchsia-500 text-transparent bg-clip-text font-bold">Payton</span><WavingHand />
+            Hi, I'm <span className="bg-gradient-to-tl from-green-500 to-teal-500 text-transparent bg-clip-text font-bold">Gift</span><WavingHand />
           </h1>
-          <h2 className="text-3xl">I'm a frontend developer.</h2>
+          <h2 className="text-3xl">I'm a software developer.</h2>
         </div>
         <BulletPoints />
         {/* socials */}
