@@ -1,8 +1,8 @@
 {
-  "name": "paytonpierce.dev",
+  "name": "giftx_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "paytonpierce.dev",
+  "homepage": "giftx_portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
