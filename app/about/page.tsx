@@ -106,11 +106,11 @@ const About = () => {
           <ul className="space-y-2 pl-4">
             <li className="flex items-center gap-2">
               <span className="text-2xl">⚽</span>
-              Playing soccer - A passionate player who believes in teamwork both on and off the field
+              Playing soccer 
             </li>
             <li className="flex items-center gap-2">
               <span className="text-2xl">🎬</span>
-              Exploring cinema - Particularly interested in sci-fi and psychological thrillers
+              Exploring cinema 
             </li>
             <li className="flex items-center gap-2">
               <span className="text-2xl">📚</span>
