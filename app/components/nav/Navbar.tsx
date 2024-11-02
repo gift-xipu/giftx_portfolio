@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import DarkModeToggle from '../DarkModeToggle'
 import MobileNavDropdown from './MobileNavDropdown'
 
 export const navLinks = [
@@ -34,9 +33,6 @@ const Navbar = () => {
           {navLinks.map((link, index) => (
             <li key={index}><Link href={link.href}>{link.label}</Link></li>
           ))}
-          <li>
-            <DarkModeToggle />
-          </li>
         </ul>
         {/* mobile */}
         <MobileNavDropdown />
@@ -46,9 +42,6 @@ const Navbar = () => {
               <span className="px-2">{link.label}</span>
             </Link>
           ))}
-        </div>
-        <div className="md:hidden">
-          <DarkModeToggle />
         </div>
       </div>
     </nav>

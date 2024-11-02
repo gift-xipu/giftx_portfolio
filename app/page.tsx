@@ -12,7 +12,7 @@ const BulletPoints = () => {
     <ul className="space-y-1 text-xl text-center md:text-left">
       <li>💻 I love coding</li>
       <li>🎓 IT graduate</li>
-      <li>📊 Passionate about data science</li>
+      <li>🛠️ Skilled in database management and API development</li>
       <li>📝 Download my <a className="link link-primary" href="/GIFT_MARKUS_XIPU_CV.pdf" download="GiftResume">resume</a></li>
     </ul>
   )
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <BulletPoints />
         {/* socials */}
-        <ul className="flex justify-center text-3xl gap-10 mt-4">
+        <ul className="flex justify-center md:justify-start text-3xl gap-10 mt-6">
           {socials.map((social, index) => (
             <li key={index} className="hover:scale-125 hover:text-white transition-all ease-in-out"><Link href={social.href} target="_blank">{social.icon}</Link></li>
           ))}
